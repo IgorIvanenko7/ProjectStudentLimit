@@ -1,0 +1,284 @@
+{
+	"info": {
+		"_postman_id": "e554a362-97e6-4087-bc33-550b58879c07",
+		"name": "Java_exercise_Limit",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAllUsers Limit",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{tokenfrkk}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1080/getAllUsers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1080",
+					"path": [
+						"getAllUsers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "runPayment Limit",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{tokenfrkk}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1080/runPayment?userId=4&sumPay=10000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1080",
+					"path": [
+						"runPayment"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "4"
+						},
+						{
+							"key": "sumPay",
+							"value": "10000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "paymentsForUserId Limit",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{tokenfrkk}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1080/paymentsForUserId/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1080",
+					"path": [
+						"paymentsForUserId",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "install NewBaseLimit Limit",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{tokenfrkk}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1080/changeLimit?userId=3&sumNewBaseLimit=15000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1080",
+					"path": [
+						"changeLimit"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "3"
+						},
+						{
+							"key": "sumNewBaseLimit",
+							"value": "15000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteUser  Limit",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "authority",
+						"value": "ccm-frontend-dev-dev.apps.ds1-genr01.corp.dev.vtb"
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "accept-language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiJ9.eyJzdWIiOiJidWlzbmVzc19hZG1pbkByZWdpb24udnRiLnJ1Iiwic2NvcGUiOlsicHJvZmlsZSJdLCJjaGFubmVsIjoiaW50ZXJuYWwiLCJpc3MiOiJmcmtrLWZhY2FkZS1zZXJ2aWNlIiwidHlwIjoiQmVhcmVyIiwiY3R4aSI6ImY4YzdjZTkxLWY3NzktNDc2Mi04YTE1LTBkMWYxYTg0YTdiNCIsImV4cCI6MjY4NzI0Njg2NSwiaWF0IjoxNjg3MTYwNDY1LCJqdGkiOiIxYWM0NTczNC1iYTg1LTQwNjUtYTkwYy0wMzc4MTNhYzY5MzcifQ.CkMYS2fdx7NbVzGw6VT1zYJih5FPbllDncLQVlI-FxGDp2xgaQf_3R1E2j1e8f4ArWWjv0hCvBOWBUsjOSJbZQ"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "cookie",
+						"value": "X-Authorization=eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiJ9.eyJzdWIiOiJidWlzbmVzc19hZG1pbkByZWdpb24udnRiLnJ1Iiwic2NvcGUiOlsicHJvZmlsZSJdLCJjaGFubmVsIjoiaW50ZXJuYWwiLCJpc3MiOiJmcmtrLWZhY2FkZS1zZXJ2aWNlIiwidHlwIjoiQmVhcmVyIiwiY3R4aSI6ImY4YzdjZTkxLWY3NzktNDc2Mi04YTE1LTBkMWYxYTg0YTdiNCIsImV4cCI6MjY4NzI0Njg2NSwiaWF0IjoxNjg3MTYwNDY1LCJqdGkiOiIxYWM0NTczNC1iYTg1LTQwNjUtYTkwYy0wMzc4MTNhYzY5MzcifQ.CkMYS2fdx7NbVzGw6VT1zYJih5FPbllDncLQVlI-FxGDp2xgaQf_3R1E2j1e8f4ArWWjv0hCvBOWBUsjOSJbZQ; rxVisitor=16944197715779R4G5FPC1TD0KVPBS87M7MF0H1LD3K0G; dtCookie=v_4_srv_8_sn_D97400B377FB151AF97CBAD3E75AC1D8_perc_100000_ol_0_mul_1_app-3Ae3cd8e6e568f274a_1_app-3A6392289b902c25d8_1; rxvt=1696586115967|1696584299970; dtLatC=1; dtSa=-; dtPC=8$384307050_949h-vMKFKSHKEUUCFRCRHIKELJKKRGTMMHLBM-0e0; JSESSIONID=7A5D2798476C7D45200BE2BAEC30D245"
+					},
+					{
+						"key": "origin",
+						"value": "https://ccm-frontend-dev-dev.apps.ds1-genr01.corp.dev.vtb"
+					},
+					{
+						"key": "referer",
+						"value": "https://ccm-frontend-dev-dev.apps.ds1-genr01.corp.dev.vtb/index.html/new-document"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"117\", \"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"117\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\": {\r\n        \"id\": 777,\r\n        \"username\": \"User777\"\r\n    },\r\n    \"listProducts\": [\r\n        {      \r\n            \"numberCount\": 73755789878,\r\n            \"balans\": 177.78,\r\n            \"typeProduct\": \"COUNT\"\r\n        },\r\n        {               \r\n            \"numberCount\": 77755789878,\r\n            \"balans\": 577.78,\r\n            \"typeProduct\": \"COUNT\"\r\n        },\r\n        {        \r\n            \"numberCount\": 77755789878,\r\n            \"balans\": 777.78,\r\n            \"typeProduct\": \"CARD\"\r\n        }\r\n    ]\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:1080/deleteUser?userId=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1080",
+					"path": [
+						"deleteUser"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

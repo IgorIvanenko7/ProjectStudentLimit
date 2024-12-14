@@ -14,7 +14,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class LimitController {
 
-    private final LimitService limitService;
+        private final LimitService limitService;
 
     // Изменение Базового лимита пользователя(клиента), не чаше 1 раза в 2 мес.
     @PutMapping("/changeLimit")

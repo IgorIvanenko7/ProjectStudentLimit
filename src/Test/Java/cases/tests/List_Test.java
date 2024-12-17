@@ -54,7 +54,6 @@ public class List_Test /*extends Root*/ {
         log.info(" Res: {}", resJ.toString());
     }
 
-
     @Test()
     public void encryption_Decryption() throws Exception {
         String password = "secret";
@@ -63,7 +62,6 @@ public class List_Test /*extends Root*/ {
         var encryptString = decryptAES(password, encrypt);
         log.info("# Encript : {} #", encryptString);
     }
-
 
     private static final int AES_BLOCK_SIZE = 16; // Размер блока AES в байтах
     private static final String ENCRYPTION_ALGORITHM = "AES/CBC/PKCS5PADDING",
